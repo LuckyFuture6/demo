@@ -5,15 +5,14 @@ import com.example.demo.mapper.DepartMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import javax.annotation.Resource;
 
-@Service("departService")
-public class DepartServiceImpl implements DepartService{
-    @Autowired
-    private DepartMapper departMapper;
+
+@Service("LoginService")
+public class LoginServiceImpl implements LoginService{
 
     @Override
-    public List<cus_info> selectAll() {
-        return departMapper.selectAll();
+    public String login(){
+        return "success";
     }
 }

@@ -1,6 +1,6 @@
 package com.example.demo.mapper;
 
-import com.example.demo.bean.Depart;
+import com.example.demo.bean.cus_info;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import java.util.List;
@@ -12,5 +12,5 @@ public interface DepartMapper {
             "C_ID,T_ID,C_Name,ScorePoint",
             "from courses"
     })
-    List<Depart> selectAll();
+    List<cus_info> selectAll();
 }

@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.bean.Depart;
+import com.example.demo.bean.cus_info;
 import com.example.demo.service.DepartService;
 import com.example.demo.service.DepartServiceImpl;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,8 +17,8 @@ public class DepartController {
     private DepartService departService = new DepartServiceImpl();
 
     @RequestMapping(value = "/selectAll", method = RequestMethod.GET)
-    public List<Depart> selectAll() {
-        List<Depart> list = departService.selectAll();
+    public List<cus_info> selectAll() {
+        List<cus_info> list = departService.selectAll();
         return list;
     }
 }
